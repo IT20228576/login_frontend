@@ -11,7 +11,7 @@ function Add({ getStudent }) {
       const studentrData = {
         name: studentName,
       };
-      await axios.post("http://localhost:5000/admin/", studentrData);
+      await axios.post("https://mern-login-test.herokuapp.com/admin/", studentrData);
       getStudent();
     } catch (err) {
       console.error(err);

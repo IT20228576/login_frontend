@@ -9,7 +9,7 @@ function LogOutBtn() {
   const navigate = useNavigate();
 
   async function logOut() {
-    await axios.get("http://localhost:5000/auth/logout");
+    await axios.get("https://mern-login-test.herokuapp.com/auth/logout");
     await getLoggedIn();
     navigate("/");
   }

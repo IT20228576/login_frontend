@@ -7,7 +7,7 @@ function Students() {
   const [students, setStudent] = useState([]);
 
   async function getStudent() {
-    const studentRes = await axios.get("http://localhost:5000/admin/");
+    const studentRes = await axios.get("https://mern-login-test.herokuapp.com/admin/");
 
     setStudent(studentRes.data);
   }
